@@ -30,7 +30,7 @@ public class GameViewer extends JFrame implements MouseListener, MouseMotionList
         //Reset Canvas
 //        g.drawImage(background,0,20,WINDOW_WIDTH, WINDOW_HEIGHT, this);
         g.setColor(Color.white);
-        g.drawRect(0,20,WINDOW_WIDTH,WINDOW_HEIGHT);
+        g.fillRect(0,20,WINDOW_WIDTH,WINDOW_HEIGHT);
         game.getDeck().draw(g, this);
 
 

@@ -73,6 +73,7 @@ public class Deck
     {
 
         g.drawImage(cards.get(0).getImage(), x, y, 100, 150, viewer);
+
 //        g.fillRect(x, y, 100, 100);
     }
     public void setCenter(int xIn, int yIn)
@@ -80,4 +81,9 @@ public class Deck
         x = xIn;
         y = yIn;
     }
+
+//    public boolean isTouching(Deck otherDeck)
+//    {
+//
+//    }
 }

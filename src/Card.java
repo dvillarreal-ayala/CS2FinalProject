@@ -2,6 +2,10 @@ import java.awt.*;
 
 public class Card
 {
+    private int x;              // Center x
+    private int y;              // Center y
+    private int dx;             // delta x in one time unit
+    private int dy;             // delta y in one time unit
     private String suit;
     private String rank;
     private int values;
@@ -38,10 +42,17 @@ public class Card
         return suit;
     }
 
-    public void draw(Graphics g)
+    public void draw(Graphics g, GameViewer viewer)
     {
-//        g.drawImage(image,);
-//        g.draw
+
+        g.drawImage(getImage(), x, y, 100, 150, viewer);
+
+//        g.fillRect(x, y, 100, 100);
+    }
+    public void setCenter(int xIn, int yIn)
+    {
+        x = xIn;
+        y = yIn;
     }
 
     public Image getImage() {

@@ -8,12 +8,14 @@ public class Game extends JFrame
     private GameViewer gameViewer;
     private boolean gameWon;
     private Deck deck1;
+    private Sprites player;
 
     public Game()
     {
         gameWon = false;
 
         deck1 = new Deck();
+        player = new Sprites();
         gameViewer = new GameViewer(this);
     }
     public static void main(String[] args)
