@@ -32,9 +32,8 @@ public class GameViewer extends JFrame implements MouseListener, MouseMotionList
 //        g.drawImage(background,0,20,WINDOW_WIDTH, WINDOW_HEIGHT, this);
             g.setColor(Color.white);
             g.fillRect(0,20,WINDOW_WIDTH,WINDOW_HEIGHT);
-            game.getPlayer().draw(g, this);
             game.getExit().draw(g, this);
-
+            game.getPlayer().draw(g, this);
 
         //If game is over print winning message.
 

@@ -14,4 +14,9 @@ public class Player extends Rectangle
     {
         g.drawImage(image, x, y, 100, 150, viewer);
     }
+    public void setCenter(int xIn, int yIn)
+    {
+        x = xIn;
+        y = yIn;
+    }
 }

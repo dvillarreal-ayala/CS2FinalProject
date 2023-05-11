@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1feea4b8-1d98-4671-a966-fd98c39f9559" name="Changes" comment="May 8">
-      <change afterPath="$PROJECT_DIR$/src/Sprites.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Exit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Exit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
+    <list default="true" id="1feea4b8-1d98-4671-a966-fd98c39f9559" name="Changes" comment="May 11 - Spent May 10 Fixing merging errors">
+      <change beforePath="$PROJECT_DIR$/src/GameViewer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameViewer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Player.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,12 +82,20 @@
       <option name="project" value="LOCAL" />
       <updated>1683535911639</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="May 11 - Spent May 10 Fixing merging errors">
+      <created>1683829655473</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1683829655473</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="May 5" />
     <MESSAGE value="May 8" />
-    <option name="LAST_COMMIT_MESSAGE" value="May 8" />
+    <MESSAGE value="May 11 - Spent May 10 Fixing merging errors" />
+    <option name="LAST_COMMIT_MESSAGE" value="May 11 - Spent May 10 Fixing merging errors" />
   </component>
 </project>
