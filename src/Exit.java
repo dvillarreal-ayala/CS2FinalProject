@@ -15,6 +15,5 @@ public class Exit extends Rectangle
 
         g.drawImage(image, x, y, 100, 150, viewer);
 
-//        g.fillRect(x, y, 100, 100);
     }
 }

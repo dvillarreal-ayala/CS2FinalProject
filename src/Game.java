@@ -12,6 +12,7 @@ public class Game extends JFrame
     private Deck deck1;
     private Rectangle player, wall1, wall2, wall3, wall4, obstacle1, obstacle2, obstacle3, exit;
 
+
     public Game()
     {
         gameWon = false;
@@ -19,6 +20,7 @@ public class Game extends JFrame
         deck1 = new Deck();
         player = new Player();
         exit = new Exit();
+
         gameViewer = new GameViewer(this);
     }
     public static void main(String[] args)
