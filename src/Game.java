@@ -33,7 +33,7 @@ public class Game extends JFrame
     {
         return player;
     }
-    public Rectangle getExit() {
-        return exit;
+    public Exit getExit() {
+        return (Exit) exit;
     }
 }

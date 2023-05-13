@@ -8,8 +8,8 @@ public class Player extends Rectangle
     private Image image;
     private Point topLeft;
     private Point bottomRight;
-    private final int WIDTH = 100;
-    private final int HEIGHT = 150;
+    private final int WIDTH = 50;
+    private final int HEIGHT = 75;
     public Player()
     {
         image = new ImageIcon("Resources/Cards/1.png").getImage();
@@ -25,18 +25,18 @@ public class Player extends Rectangle
         x = xIn - WIDTH / 2;
         y = yIn - HEIGHT / 2;
     }
-    public boolean isOverlapping(Rectangle other) {
-        //Find out if one rectangle is above or below another, return
-        if (this.topLeft.getY() > other.getBottomRight().getY()
-                || this.bottomRight.getY() < other.getTopLeft().getY()) {
-            return false;
-        }
-        //Find out if one rectangle is to the left or right
-        if (this.topLeft.getX() > other.getBottomRight().getX()
-                || this.bottomRight.getX() < other.getTopLeft().getX()) {
-            return false;
-        }
-        return false;
-    }
+//    public boolean isOverlapping(Rectangle other) {
+//        //Find out if one rectangle is above or below another, return
+//        if (this.topLeft.getY() > other.getBottomRight().getY()
+//                || this.bottomRight.getY() < other.getTopLeft().getY()) {
+//            return false;
+//        }
+//        //Find out if one rectangle is to the left or right
+//        if (this.topLeft.getX() > other.getBottomRight().getX()
+//                || this.bottomRight.getX() < other.getTopLeft().getX()) {
+//            return false;
+//        }
+//        return false;
+//    }
 
 }

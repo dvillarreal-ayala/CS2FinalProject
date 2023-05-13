@@ -90,12 +90,13 @@ public class GameViewer extends JFrame implements MouseListener, MouseMotionList
         int x = e.getX();
         int y = e.getY();
 
-        game.getPlayer().setNewCords(x, y);
-        if(game.getPlayer().isOverlapping(game.getExit()))
+
+        if(game.getExit().isOverlapping(x, y))
         {
             game.getPlayer().setNewCords(0,20);
             System.out.println("/n/n/nOverlapping/n/n/n");
         }
+        game.getPlayer().setNewCords(x, y);
         repaint();
     }
 }

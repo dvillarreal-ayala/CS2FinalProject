@@ -30,5 +30,12 @@ public class Exit extends Rectangle
         g.drawImage(image, x, y, 100, 150, viewer);
 
     }
-
+    public boolean isOverlapping(int x, int y) {
+        //Find out if mouse, and therefore player graphic is overlapping with exit.
+//        if ()
+//        {
+//            return false;
+//        }
+        return false;
+    }
 }
