@@ -71,15 +71,32 @@ public class GameViewer extends JFrame implements MouseListener, MouseMotionList
         System.out.println("\t\t\texecuting mouseDragged event handler");
 
         // Ask the input event the current location (x and y position on the Frame) of the mouse
-        int x = e.getX();
-        int y = e.getY();
-
-        game.getPlayer().setCenter(x, y);
-        repaint();
+//        int x = e.getX();
+//        int y = e.getY();
+//
+//        game.getPlayer().setNewCords(x, y);
+//        if(game.getPlayer().isOverlapping(game.getExit()))
+//        {
+//            game.getPlayer().setNewCords(0,20);
+//            System.out.println("/n/n/nOverlapping/n/n/n");
+//        }
+//        repaint();
     }
 
     @Override
-    public void mouseMoved(MouseEvent e) {
+    public void mouseMoved(MouseEvent e)
+    {
         System.out.println("\t\t\texecuting mouseMoved event handler");
+        // Ask the input event the current location (x and y position on the Frame) of the mouse
+        int x = e.getX();
+        int y = e.getY();
+
+        game.getPlayer().setNewCords(x, y);
+        if(game.getPlayer().isOverlapping(game.getExit()))
+        {
+            game.getPlayer().setNewCords(0,20);
+            System.out.println("/n/n/nOverlapping/n/n/n");
+        }
+        repaint();
     }
 }

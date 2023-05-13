@@ -1,15 +1,12 @@
 import javax.swing.*;
 import java.awt.event.*;
-import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
-import java.awt.event.MouseMotionListener;
 
 
 public class Game extends JFrame
 {
     private GameViewer gameViewer;
     private boolean gameWon;
-    private Deck deck1;
+
     private Rectangle player, wall1, wall2, wall3, wall4, obstacle1, obstacle2, obstacle3, exit;
 
 
@@ -17,9 +14,8 @@ public class Game extends JFrame
     {
         gameWon = false;
 
-        deck1 = new Deck();
         player = new Player();
-        exit = new Exit();
+        exit = new Exit(700, 400);
 
         gameViewer = new GameViewer(this);
     }
@@ -32,10 +28,6 @@ public class Game extends JFrame
     public void run()
     {
         gameViewer.repaint();
-    }
-    public Deck getDeck()
-    {
-        return deck1;
     }
     public Rectangle getPlayer()
     {
