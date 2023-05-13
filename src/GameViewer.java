@@ -14,7 +14,6 @@ public class GameViewer extends JFrame implements MouseListener, MouseMotionList
     public GameViewer(Game game)
     {
         this.game = game;
-        this.background = new ImageIcon("Resources/Banana.png").getImage();
 
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
         this.setTitle("Game Screen");
