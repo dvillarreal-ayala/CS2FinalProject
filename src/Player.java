@@ -39,4 +39,11 @@ public class Player extends Rectangle
 //        return false;
 //    }
 
+    public int getWidth() {
+        return WIDTH;
+    }
+
+    public int getHeight() {
+        return HEIGHT;
+    }
 }

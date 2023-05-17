@@ -29,9 +29,9 @@ public class Game extends JFrame
     {
         gameViewer.repaint();
     }
-    public Rectangle getPlayer()
+    public Player getPlayer()
     {
-        return player;
+        return (Player) player;
     }
     public Exit getExit() {
         return (Exit) exit;
