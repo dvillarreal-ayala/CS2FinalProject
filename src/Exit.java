@@ -33,7 +33,7 @@ public class Exit extends Rectangle
     public boolean isOverlapping(int mouseX, int mouseY, int mouseWidth, int mouseHeight)
     {
         //Find out if mouse moved, and therefore player graphic is overlapping with exit.
-        if (mouseX + mouseWidth >= topLeft.getX())
+        if (mouseX + mouseWidth >= topLeft.getX() && bottomRight.getX() )
         {
             return true;
         }
